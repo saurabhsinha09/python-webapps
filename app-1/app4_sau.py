@@ -12,5 +12,9 @@ def about():
     #return "Website content goes here!"   
     return render_template("about.html") 
 
+@app.route('/image/')
+def image():
+    return render_template("image.html")    
+
 if __name__ == "__main__":
     app.run(debug=True)
